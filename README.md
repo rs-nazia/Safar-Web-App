@@ -1,5 +1,3 @@
-Here is a professional overview of the SAFAR Travel Booking & Management Platform based on the codebase analysis.
-
 ### Project Introduction
 **SAFAR** is a dynamic, full-stack travel marketplace designed to seamlessly connect travel agencies with globetrotters. Built on a robust PHP and MySQL architecture, the platform serves as a centralized hub where verified travel agencies can curate and list premium tour packages and hotel accommodations. For travelers, SAFAR offers an intuitive, visually engaging interface to discover, compare, and reserve their next adventure. With an emphasis on user experience, secure role-based access, and streamlined booking workflows, SAFAR modernizes the travel reservation process for both vendors and customers.
 
