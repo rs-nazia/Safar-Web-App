@@ -8,9 +8,9 @@
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="<?php echo BASE_URL; ?>/">Home</a></li>
-                    <li><a href="<?php echo BASE_URL; ?>/login.php">Login</a></li>
-                    <li><a href="<?php echo BASE_URL; ?>/signup.php">Register</a></li>
+                    <li><a href="<?php echo BASE_URL; ?>/pages/index.php">Home</a></li>
+                    <li><a href="<?php echo BASE_URL; ?>/pages/login.php">Login</a></li>
+                    <li><a href="<?php echo BASE_URL; ?>/pages/signup.php">Register</a></li>
                 </ul>
             </div>
             <div class="footer-contact">

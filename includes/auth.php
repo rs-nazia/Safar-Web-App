@@ -9,7 +9,7 @@ function isLoggedIn() {
 // Redirect unauthenticated users to login
 function requireLogin() {
     if (!isLoggedIn()) {
-        header("Location: " . BASE_URL . "/login.php");
+        header("Location: " . BASE_URL . "/pages/login.php");
         exit();
     }
 }
@@ -18,7 +18,7 @@ function requireLogin() {
 function requireRole($role) {
     requireLogin();
     if ($_SESSION['user_role'] !== $role) {
-        header("Location: " . BASE_URL . "/404.php"); // or a 'not authorized' page
+        header("Location: " . BASE_URL . "/pages/404.php"); // or a 'not authorized' page
         exit();
     }
 }
@@ -27,7 +27,7 @@ function requireRole($role) {
 function logout() {
     session_unset();
     session_destroy();
-    header("Location: " . BASE_URL . "/login.php");
+    header("Location: " . BASE_URL . "/pages/login.php");
     exit();
 }
 ?>

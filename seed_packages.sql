@@ -23,7 +23,7 @@ INSERT IGNORE INTO packages (id, agency_id, title, location, price, description,
 (5, 2, 'Swiss Alps Adventure', 'Switzerland', 3200.00, 'A premium adventure package exploring the majestic Swiss Alps. Perfect for hiking enthusiasts and nature lovers.', 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b'),
 (6, 2, 'Patagonia Wilderness', 'Argentina', 2800.00, 'Explore the dramatic landscapes, glaciers, and mountains of Patagonia on this 12-day expedition.', 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e'),
 
-(7, 3, 'Tokyo City Explorer', 'Tokyo, Japan', 1800.00, 'Immerse yourself in the bustling streets, rich history, and modern marvels of Tokyo.', 'https://images.unsplash.com/photo-1491553895911-0055eca6402d'),
+(7, 3, 'Tokyo City Explorer', 'Tokyo, Japan', 1800.00, 'Immerse yourself in the bustling streets, rich history, and modern marvels of Tokyo.', 'https://images.unsplash.com/photo-1540959733332-eab4deceeaf7'),
 (8, 3, 'New York Weekend Escapade', 'New York, USA', 1200.00, 'A fast-paced weekend exploring the city that never sleeps. Visit Times Square, Central Park, and more.', 'https://images.unsplash.com/photo-1467269204594-9661b134dd2b'),
 (9, 3, 'Dubai Luxury Tour', 'Dubai, UAE', 2500.00, 'Experience luxury at its finest with our exclusive 5-day Dubai city tour.', 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c'),
 
