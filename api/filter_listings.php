@@ -1,14 +1,24 @@
 <?php
 require_once '../includes/db.php';
 
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 header('Content-Type: application/json');
 
 $type = $_GET['type'] ?? 'all';
 $location = $_GET['location'] ?? '';
 $max_price = $_GET['price'] ?? 5000;
 
-$query = "SELECT p.*, a.company_name FROM packages p JOIN agencies a ON p.agency_id = a.id WHERE p.price <= ?";
-$params = [$max_price];
+$user_id = $_SESSION['user_id'] ?? 0;
+
+$query = "SELECT p.*, a.company_name,
+          EXISTS(SELECT 1 FROM favorites WHERE user_id = ? AND package_id = p.id) as is_favorited 
+          FROM packages p 
+          JOIN agencies a ON p.agency_id = a.id 
+          WHERE p.price <= ?";
+$params = [$user_id, $max_price];
 
 if ($type === 'tour' || $type === 'hotel') {
     $query .= " AND p.type = ?";

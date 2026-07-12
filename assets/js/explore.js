@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         exploreGrid.innerHTML = '<div style="text-align: center; grid-column: 1 / -1; padding: 40px;"><p>Loading...</p></div>';
 
-        fetch(`api/filter_listings.php?${params.toString()}`)
+        fetch(`../api/filter_listings.php?${params.toString()}`)
             .then(response => response.json())
             .then(data => {
                 if (data.status === 'success') {
